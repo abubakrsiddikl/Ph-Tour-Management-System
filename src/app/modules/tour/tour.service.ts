@@ -1,9 +1,8 @@
-import { Query } from "mongoose";
+
 import { QueryBuilder } from "../../utils/QueryBuilder";
 import { tourSearchableFields } from "./tour.constant";
 import { ITour, ITourType } from "./tour.interface";
 import { Tour, TourType } from "./tour.model";
-import { excludeField } from "../../constants";
 import { deleteImageFromCLoudinary } from "../../config/cloudinary.config";
 
 const createTour = async (payload: ITour) => {
